@@ -1,6 +1,2 @@
-This is a responsive hotel booking website that combines modern frontend design with seamless user interaction!<br>
-Key Highlights:<br>
-✅ Cross-Platform Responsiveness: Works flawlessly on desktops, tablets, and mobile devices.<br>
-✅ User-Centric Design: An intuitive interface with smooth navigation for effortless booking.<br>
-✅ Modern Technologies: Built with HTML5, CSS3, JavaScript, and fully optimized for performance.<br>
-✅ Interactive Features: Dynamic room availability checker, booking forms, and animations to enhance the user experience.<br>
+Project Description
+The Hotel Booking System (Frontend) is a fully responsive web application designed to simulate a hotel booking experience. It features a modern and visually appealing interface with sections like a login form, a static room information page, and an automatic sliding review carousel. This project focuses on front-end design and interactivity without backend functionality.
