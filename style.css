@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Lato", serif;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+    border: none;
+
+
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(63 60 60);
+    padding: 1.7rem 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    
+    z-index: 1000;
+    border-bottom: 1px solid rgb(129, 125, 125);
+
+}
+
+.title {
+    font-size: 2.2rem;
+}
+
+.title span {
+    color: orange;
+}
+
+.namings {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
+
+}
+
+.namings a:hover {
+    color: orange;
+}
+
+.icons {
+    font-size: 1.9rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+i:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+i {
+
+    font-size: 2rem;
+    color: white;
+
+}
+
+.slidebox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(63 60 60);
+    border-top: 1px solid rgb(142, 135, 135);
+    padding: 8px 15px;
+    
+    clip-path: polygon(0 0, 100% 0, 0 0);
+    height: 8vh;
+}
+
+.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+input {
+     width: 95%;
+     height: 5.5vh;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+
+.slidebox i {
+    transform: translateX(2.5rem);
+}
+button{
+    background-color: orange;
+    color: white;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+.slidenav {
+    height: 0vh;
+    overflow: hidden;
+    background-color: rgb(66, 64, 64);
+    margin-top: 9vh;
+    transition-property: height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+
+}
+
+.slidenav div {
+    background-color: rgb(29, 28, 28);
+    margin-top: 2rem;
+    padding: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    height: 10%;
+    cursor: pointer;
+
+
+}
+
+.slidenav div:hover {
+    background-color: orange;
+}
+
+.active2 {
+    height: 73vh;
+
+}
+
+
+.login-container {
+    position: fixed;
+    top: -120vh;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 30%;
+    background-color: white;
+    padding: 3rem 3rem;
+    color: rgb(112, 99, 99);
+}
+
+/* h2 {
+    text-align: center;
+} */
+
+.submit {
+    background-color: orange;
+    color: white;
+}
+
+form .submit:hover {
+    background-color: rgb(146, 97, 6);
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    color: rgb(112, 99, 99);
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+.check input {
+    width: 15px;
+}
+
+form a {
+    color: orange;
+}
+#form-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 4rem;
+    color: white;
+    z-index: 1100;
+}
+.imageslide{
+    min-height: 60vh;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.videos{
+    height: 100%;
+    width: 300%;
+    display: flex;
+    
+}
+.videos video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform: translate(0);
+}
+.content{
+    color: white;
+    
+      transform: translateY(-45rem);
+    /* left: 20%;  */
+    margin: auto;
+    line-height: 6rem;
+    text-align: center;
+}
+.content h1{
+   font-size: 4.5rem;
+}
+.content h3{
+    font-size: 2.5rem;
+    /* text-align: center; */
+}
+
+.content button{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+.button{
+    background-color: rgb(63 60 60);
+    color: white;
+    width: 3rem;
+    height: 2rem;
+}
+.button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+#button1{
+    position: absolute;
+    bottom: 65%;
+    left: 1.5%;
+}
+#button2{
+    position: absolute;
+    bottom: 65%;
+    right: 2%;
+}
+.boxfirst{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    background-color: rgb(104, 101, 101);
+    width: 13rem;
+    border-radius:10px;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    position: relative;
+    top: -5rem;
+    
+
+}
+.dot{
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    
+
+}
+.last{
+    background-color: black;
+    height: 10vh;
+}
+.headings{
+    text-align: center;
+}
+.headings span{
+    background-color: orange;
+    color: #fff;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+
+.headings .space{
+    background: none;
+}
+.book button{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    
+}
+
+.book form{
+    height: 100%;
+}
+
+
+.bookcontainer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+    color: rgb(101, 98, 98);
+    flex-wrap:wrap;
+    
+
+}
+
+
+.book form input{
+    width: 30vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(101, 98, 98);
+
+}
+.last{
+    background-color: black;
+}
+.packages{
+    text-align: center;
+}
+.packages span{
+    background-color: orange;
+    color: #fff;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+.pictures{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 3rem 10rem;
+}
+.picture{
+    
+    height:500px;
+    border: 2px solid rgb(212, 207, 207);
+    border-radius: 8px;
+    position: relative;
+
+}
+.picture img{
+    height:55%;
+    width:100%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px; 
+}
+.picture>:nth-child(3){
+    padding: 1.4rem;
+}
+.picture i{
+    color: orange;
+}
+.picture h2{
+    font-size: 1.8rem;
+    display: inline;
+}
+.picture p{
+    color: rgb(112, 99, 99);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+.picture h3{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+.picture button{
+    padding: 1rem ;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.picture button:hover{
+    background-color: rgb(146, 97, 6);
+}
+.backbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(139, 136, 136, 0.7);
+    height: 0px;
+    transition-property: height;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.backbox:hover{
+    cursor: pointer;
+}
+
+.backbox .iconsshop{
+    display: none;
+    font-size: 3rem;
+    color: orange;
+    position: absolute;
+    
+
+}
+.backbox i{
+    font-size: 3rem;
+    padding: 0 4px;
+}
+.services span{
+    background-color: orange;
+    color: #fff;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+.services{
+    text-align: center;
+}
+.features{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+    
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 3rem 10rem;
+}
+.feature{
+   
+    
+    height:380px;
+    
+    border-radius: 8px;
+    position: relative;
+
+    text-align: center;
+    padding: .5em;
+    
+
+}
+.feature h1{
+    padding: 2rem 0;
+
+}
+.features i{
+    color: orange;
+    font-size: 4rem;
+}
+.features p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: rgb(70, 67, 67);
+}
+.gallery{
+    text-align: center;
+}
+.gallery span{
+    background-color: orange;
+    color: #fff;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+.hills{
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+
+
+
+}
+.hill{
+    height: 264px;
+    position: relative;
+}
+.hill img{
+    height: 100%;
+    width: 100%;
+    
+}
+.blackbox{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0; 
+    cursor: pointer; 
+    transition-property: height;
+    transition-duration: .2s;
+    transition-timing-function:ease-in-out ;
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    
+   
+}
+ .boxcontent{
+    display: none;
+    text-align: center;
+    padding: 0 2rem;
+
+}
+.boxcontent h1{
+    color: orange;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.boxcontent p{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.boxcontent button{
+    width: 11rem;
+    height: 3rem;
+    cursor: pointer;
+    transition-property:background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.boxcontent button:hover{
+    background-color:rgba(0, 0, 0, 0.7) ;
+    border: 2px solid orange;
+
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    
+  }
+  .swiper-wrapper{
+   
+    text-align: center;
+  }
+ .swiper img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+ }
+ .review{
+    text-align: center;
+ }
+.review span{
+    background-color: orange;
+    color: #fff;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+.swiper-wrapper p{
+    font-size: 1.4rem;
+    color: #707070;
+}
+.swiper-wrapper img{
+    padding-bottom: .5rem;
+}
+.swiper-wrapper h1{
+    padding-bottom: .5rem;
+    color: white;
+    
+}
+.swiper-wrapper h1 span{
+    background-color: orange;
+   
+}
+.contact{
+    text-align: center;
+}
+.contact span{
+    background-color: orange;
+    color: white;
+    font-size: 3.5rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+
+}
+.contactdetail{
+display: flex;
+justify-content: space-around;
+padding-top:4rem;
+flex-wrap: wrap;
+
+}
+.contactdetail>div:first-child{
+    width: 450px;
+    height: 400px;
+}
+.contactdetail form input{
+    margin-bottom: 2.5rem;
+}
+.swiper2 {
+    width: 100%;
+    height: 100%;
+  }
+  li{
+    list-style: none;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+  .footer a:hover{
+    color: orange;
+    text-decoration: underline;
+  }
+  .footer{
+    height: 60vh;
+    background-color: rgb(55, 54, 54);
+    display: flex;
+    gap: 15rem;
+    padding: 3rem 9rem ;
+    width: 100%;
+   
+    
+  }
+ .footer>div:first-child{
+    width: 200px;
+ }
+ 
+ .footer h1{
+    color: white;
+    margin-bottom: 2rem;
+ }
+ .footer p{
+    font-size: 1.4rem;
+    color: white;
+ }
+
+@media (max-width:710px) {
+    .fa-solid.fa-bars {
+        display: inline;
+    }
+
+    .namings {
+        display: none;
+    }
+}
+
+@media(max-width:875px) {
+    .book{
+        width: 80vw;
+    }
+    .book form{
+        width: 100%;
+    }
+    .book form input {
+        width: 100%;
+    }
+    
+}
+@media(max-width:867px){
+   
+    .pictures{
+        
+        grid-template-columns: 1fr;
+
+    }
+    
+    
+}
+@media(max-width:558px) {
+    .pictures{
+        padding: 1rem;
+    }
+    .features{
+        padding: 1rem;
+    }
+    .hills{
+        padding: 1rem;
+    }
+
+}
+@media(max-width:925px){
+    .contactdetail{
+       
+        gap: 2rem;
+        
+        }
+
+    
+}
+@media (max-width:500px) {
+ .contactdetail form{
+    width: 80vw;
+ }
+ .footer{
+    flex-direction: column;
+    height: 100%;
+ }
+}
+@media(max-width:977px){
+    .footer{
+        gap: 5rem;
+        padding: 2rem 3rem;
+    }
+}
+
+
+
+
+
+
