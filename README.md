@@ -19,4 +19,6 @@
 <ul>Responsive Design: Utilizes media queries for a mobile-first, adaptive layout.</ul>
 
 <h1>Installation</h1>
+<li> Clone the repository</li>
+https://github.com/DeepAshishThapa/hotelbooking.git
 
