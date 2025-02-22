@@ -21,4 +21,14 @@
 <h1>Installation</h1>
 <li> Clone the repository</li>
 https://github.com/DeepAshishThapa/hotelbooking.git
+<li> Navigate to the project drectory</li>
+cd HOTELBOOKING2
+ 
+ <h1>Usage</h1>
+ <li> Open the project in your browser to start exploring the hotel booking system.
+ <li> Use the login section to simulate user login (no backend functionality yet).
+ <li> View the static room details page.
+ <li> Watch the automatic sliding customer reviews carousel.
+ <li> Experience the responsive design by resizing the browser window or viewing on different devices.
+
 
