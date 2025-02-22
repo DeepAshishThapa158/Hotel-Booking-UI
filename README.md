@@ -20,10 +20,10 @@
 
 <h1>Installation</h1>
 <li> Clone the repository</li>
-https://github.com/DeepAshishThapa/hotelbooking.git
-<div></div>
+<ul>https://github.com/DeepAshishThapa/hotelbooking.git<ul>
+
 <li> Navigate to the project drectory</li>
-cd HOTELBOOKING2
+<ul>cd HOTELBOOKING2<ul>
  
  <h1>Usage</h1>
  <li> Open the project in your browser to start exploring the hotel booking system.
