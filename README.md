@@ -20,7 +20,7 @@
 
 <h1>Installation</h1>
 <li> Clone the repository</li>
-<ul>https://github.com/DeepAshishThapa/hotelbooking.git</ul>
+<ul>https://github.com/DeepAshishThapa158/Hotel-Booking-UI.git</ul>
 
 <li> Navigate to the project drectory</li>
 <ul>cd HOTELBOOKING2</ul>
